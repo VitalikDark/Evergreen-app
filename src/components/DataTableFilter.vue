@@ -1,63 +1,76 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col>
+    <v-row >
+      <v-col cols="12" sm="1">
         <v-text-field
             label="period"
             placeholder="YYYYMMDD"
             v-model="formData.period"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             label="start"
             placeholder="YYYYMMDD"
             v-model="formData.start"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             label="end"
             placeholder="YYYYMMDD"
             v-model="formData.end"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             v-model="formData.order"
             label="order"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             v-model="formData.sort"
             label="sort"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             v-model="formData.id_api"
             label="id_api"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             v-model="formData.s181"
             label="s181"
+            hide-details
         />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="1">
         <v-text-field
             v-model="formData.freq"
             label="freq"
+            hide-details
         />
       </v-col>
 
-      <v-col align-self="center">
-        <v-btn small @click="handleClickApply">
+      <v-col align-self="end">
+        <v-btn
+            class="mx-1"
+            small @click="handleClickApply"
+        >
           Apply
         </v-btn>
-        <v-btn small @click="handleClickResetFilter">
+        <v-btn
+            class="mx-1"
+            small @click="handleClickResetFilter">
           Reset
         </v-btn>
       </v-col>
